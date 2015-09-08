@@ -67,7 +67,7 @@ Typy rozkładów:
 
 *Systemy Typu: M/M/1/?*
  
-$$ N_{sr} = \frac{r}{1-r} $$ - co w przypadku gdy r = 1 ? 
+$$ N_{sr} = \frac{r}{1-r} $$ - co w przypadku gdy r = 1 ?
 
 $$ p_{k} = p_0 * r^k $$ 
 
@@ -82,6 +82,12 @@ $$ p_0 = \frac{1-r}{1-r^{Q+1}} $$
 $$ L = \frac{1-r}{1-r^{Q+1}} * r^Q $$, gdy $$ r ne 1 $$
 
 $$ L = \frac{1}{Q + 1} $$, gdy $$ r = 1 $$
+
+$$ N_{sr} = \sum_{k=0}^{Q} p_k * k $$
+
+Jeśli $$ p_k $$ jest stałe to: $$ N_{sr} = p_k * \sum_{k=0}^{Q} k $$
+
+Suma skończonego ciągu arytmetycznego: $$ \frac{a_{1} + a_{n}}{2} $$
 
 *Systemy Typu: M/M/S*
 
