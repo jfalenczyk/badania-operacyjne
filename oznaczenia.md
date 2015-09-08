@@ -98,3 +98,5 @@ $$ \rho = \frac{b_{sr}}{a_{sr} * v} $$  - normatywny współczynnik obciążenia
 Systemy Typu: M/M/$$ \infty $$
 
 $$ N_{sr} = \rho $$
+
+$$ p_k = e^{-\rho * \frac{e^k}{k!}} $$
