@@ -1,5 +1,5 @@
 {
-  "gitbook": ">=2.0.0",
+  "gitbook": "2.3.0",
   "title": "badania-operacyjne",
   "description": "opracowanie z przedmiotu badania operacyjne",
   "language": "pl",
