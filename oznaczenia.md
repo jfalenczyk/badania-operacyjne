@@ -87,7 +87,7 @@ $$ N_{sr} = \sum_{k=0}^{Q} p_k * k $$
 
 Jeśli $$ p_k $$ jest stałe to: $$ N_{sr} = p_k * \sum_{k=0}^{Q} k $$
 
-Suma skończonego ciągu arytmetycznego: $$ \frac{a_{1} + a_{n}}{2} $$
+Suma skończonego ciągu arytmetycznego: $$ \frac{a_{1} + a_{n}}{2} * n $$
 
 *Systemy Typu: M/M/S*
 
