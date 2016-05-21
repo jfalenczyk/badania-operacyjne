@@ -15,15 +15,15 @@ Oblicz średnią licznę transakcji w systemie.
 
 ### sposób 1
 
-średnia cyrkulacja = $$ 800 \frac{tranakcji}{s} $$
+średnia cyrkulacja = $$800 \frac{tranakcji}{s}$$
 
-średni czas życia = $$ \frac{5000 operacji}{4 000 000 \frac{operacji}{s}} = \frac{1}{800} s $$
+średni czas życia = $$\frac{5000 operacji}{4 000 000 \frac{operacji}{s}} = \frac{1}{800} s$$
 
-średnia populacja = $$ 800\frac{transakcji}{s} * \frac{1}{800}s = 1 transakcja $$
+średnia populacja = $$800\frac{transakcji}{s} * \frac{1}{800}s = 1 transakcja$$
 
 ### sposób 2
 
-$$ N_{sr} = \frac{(1 - L)}{a_{sr}} * d_{sr}, gdzie= d_{sr}=\frac{b_{sr}}{v} $$
+$$N_{sr} = \frac{(1 - L)}{a_{sr}} * d_{sr}, gdzie= d_{sr}=\frac{b_{sr}}{v}$$
 
 > N = liczba zgłoszeń w systemie
 
@@ -37,13 +37,13 @@ $$ N_{sr} = \frac{(1 - L)}{a_{sr}} * d_{sr}, gdzie= d_{sr}=\frac{b_{sr}}{v} $$
 
 > wydajność procesora
 
-######przyjmujemy że bufor jest nieskończony czyli $$ L = 0 $$ z treści zadania nie wynika innaczej
+######przyjmujemy że bufor jest nieskończony czyli $$L = 0$$ z treści zadania nie wynika innaczej
  
-$$ d_{sr} = \frac{5000 operacji}{4 000 000 \frac{operacji}{s}} = \frac{1}{800}s $$
+$$d_{sr} = \frac{5000 operacji}{4 000 000 \frac{operacji}{s}} = \frac{1}{800}s$$
 
-$$ a_{sr} = \frac{1 s}{8000 operacji} $$
+$$a_{sr} = \frac{1 s}{8000 operacji}$$
 
-$$ N_{sr} = \frac{1 - 0}{ \frac{1}{800}} * \frac{1}{800} = 1 $$
+$$N_{sr} = \frac{1 - 0}{ \frac{1}{800}} * \frac{1}{800} = 1$$
 
 ----------
 **Odpowiedź:** Srednia liczba transakcji w systemie wynosi 1.

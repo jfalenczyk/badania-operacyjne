@@ -2,45 +2,45 @@
 
 ###Oznaczenia
 
-$$ a_{sr} $$ śreni interwał przybycia zgłoszenia ( zawsze dane ? )
+$$a_{sr}$$ śreni interwał przybycia zgłoszenia ( zawsze dane ? )
 
-$$ b_{sr} $$ średni rozmiar zgłoszenia
+$$b_{sr}$$ średni rozmiar zgłoszenia
 
 $$ v \ [wymiar zgloszenia/s]$$ prędkość procesora
  
-$$ \tau_{sr} $$ średni czas obsługi zgłoszenia
+$$\tau_{sr}$$ średni czas obsługi zgłoszenia
 
-$$ w_{sr} $$ średni opóźnienie buforowania
+$$w_{sr}$$ średni opóźnienie buforowania
 
-$$ d_{sr} $$ średni czas przebywania w systemie ( czas życia )
+$$d_{sr}$$ średni czas przebywania w systemie ( czas życia )
 
-$$ r \ [bezwymiarowe] $$ współczynnik obciążenie procesora | niestabilność przy $$ r \ge 1 $$  
+$$r \ [bezwymiarowe]$$ współczynnik obciążenie procesora | niestabilność przy $$r \ge 1$$  
 
-$$ \rho \ [bezwymiarowe] $$ normatywny współczynnik obciążenia - w systemach wielo procesorowych
+$$\rho \ [bezwymiarowe]$$ normatywny współczynnik obciążenia - w systemach wielo procesorowych
 
-$$ L $$ frakcja zgłoszeń utraconych wskutek przepełnienia pamięci buforowej
+$$L$$ frakcja zgłoszeń utraconych wskutek przepełnienia pamięci buforowej
 
-$$ p_k \ [bezwymiarowe] $$ frakcja czasu w której w systemie jest k zgłoszeń
+$$p_k \ [bezwymiarowe]$$ frakcja czasu w której w systemie jest k zgłoszeń
 
-$$ 1 - p_0 \ [bezwymiarowe] $$ współczynnik zajętości ( wykorzystania ) procesora
+$$1 - p_0 \ [bezwymiarowe]$$ współczynnik zajętości ( wykorzystania ) procesora
 
-$$ N_{sr} [bezwymiarowe] $$ średnia ilość zadań w systemie
+$$N_{sr} [bezwymiarowe]$$ średnia ilość zadań w systemie
 
 ### Wzory
 
-$$ \tau_{sr} = \frac{b_{sr}}{v} $$
+$$\tau_{sr} = \frac{b_{sr}}{v}$$
 
-$$ r = \frac{b_{sr}}{a_{sr} * v} $$
+$$r = \frac{b_{sr}}{a_{sr} * v}$$
 
-$$ r = \frac{\tau_{sr}}{a_{sr}} $$
+$$r = \frac{\tau_{sr}}{a_{sr}}$$
 
 Prawo Little'a:
 
-$$  N_{sr} = \frac{1-L}{a_{sr}} * d_{sr} $$
+$$ N_{sr} = \frac{1-L}{a_{sr}} * d_{sr}$$
 
-w ujęciu procesora: $$ 1 - p_0 = \frac{(1-L)}{a_{sr}} * \tau_{sr} = (1-L) * r $$
+w ujęciu procesora: $$1 - p_0 = \frac{(1-L)}{a_{sr}} * \tau_{sr} = (1-L) * r$$
 
-w ujęciu pamięci buforowej: $$  N_{sr} - (1 - p_0 )= \frac{1 - L}{a_{sr}} * w_{sr} $$
+w ujęciu pamięci buforowej: $$ N_{sr} - (1 - p_0 )= \frac{1 - L}{a_{sr}} * w_{sr}$$
 
 ### Notacja KENDALLA
 
@@ -50,7 +50,7 @@ OZNACZENIA:
 * A - rozkład interwałów zgłoszeń
 * B - rozkład wielkości wymagań zgłoszeń. 
 * S - liczba procesorów
-* Q - pojemność pamięci buforowej ( jeśli nie podany to zakładamy $$ \infty $$ )
+* Q - pojemność pamięci buforowej ( jeśli nie podany to zakładamy $$\infty$$ )
 * J - rozmiar populacji źródeł zgłoszeń ( opcjonalny parametr )
 
 Typy rozkładów:
@@ -67,36 +67,36 @@ Typy rozkładów:
 
 *Systemy Typu: M/M/1/?*
  
-$$ N_{sr} = \frac{r}{1-r} $$ - co w przypadku gdy r = 1 ?
+$$N_{sr} = \frac{r}{1-r}$$ - co w przypadku gdy r = 1 ?
 
-$$ p_{k} = p_0 * r^k $$ 
+$$p_{k} = p_0 * r^k$$ 
 
-$$ p_0 + p_1 + p_2 + p_3 + ... = 1 $$  
+$$p_0 + p_1 + p_2 + p_3 + ... = 1$$  
 
-$$ p_0 = 1 - (p_1 + p_2 + p_3 + ...) \Rightarrow p_0 = 1 - r $$
+$$p_0 = 1 - (p_1 + p_2 + p_3 + ...) \Rightarrow p_0 = 1 - r$$
 
 *Systemy Typu: M/M/1/Q*
 
-$$ p_0 = \frac{1-r}{1-r^{Q+1}} $$
+$$p_0 = \frac{1-r}{1-r^{Q+1}}$$
 
-$$ L = \frac{1-r}{1-r^{Q+1}} * r^Q $$, gdy $$ r \ne 1 $$
+$$L = \frac{1-r}{1-r^{Q+1}} * r^Q$$, gdy $$r \ne 1$$
 
-$$ L = \frac{1}{Q + 1} $$, gdy $$ r = 1 $$
+$$L = \frac{1}{Q + 1}$$, gdy $$r = 1$$
 
-$$ N_{sr} = \sum_{k=0}^{Q} p_k * k $$
+$$N_{sr} = \sum_{k=0}^{Q} p_k * k$$
 
-Jeśli $$ p_k $$ jest stałe to: $$ N_{sr} = p_k * \sum_{k=0}^{Q} k $$
+Jeśli $$p_k$$ jest stałe to: $$N_{sr} = p_k * \sum_{k=0}^{Q} k$$
 
-Suma skończonego ciągu arytmetycznego: $$ \frac{a_{1} + a_{n}}{2} * n $$
+Suma skończonego ciągu arytmetycznego: $$\frac{a_{1} + a_{n}}{2} * n$$
 
 *Systemy Typu: M/M/S*
 
-$$ r = \frac{b_{sr}}{a_{sr} * v * S} $$  - współczynnik obciążenia
+$$r = \frac{b_{sr}}{a_{sr} * v * S}$$  - współczynnik obciążenia
 
-$$ \rho = \frac{b_{sr}}{a_{sr} * v} $$  - normatywny współczynnik obciążenia [erlangi]
+$$\rho = \frac{b_{sr}}{a_{sr} * v}$$  - normatywny współczynnik obciążenia [erlangi]
 
-Systemy Typu: M/M/$$ \infty $$
+Systemy Typu: M/M/$$\infty$$
 
-$$ N_{sr} = \rho $$
+$$N_{sr} = \rho$$
 
-$$ p_k = e^{-\rho * \frac{e^k}{k!}} $$
+$$p_k = e^{-\rho * \frac{e^k}{k!}}$$
