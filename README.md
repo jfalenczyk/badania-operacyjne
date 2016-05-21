@@ -8,4 +8,18 @@ Badania Operacyjne
 ##### Otwarte Publiczne Repozytorium: https://github.com/pawelgorka/badania-operacyjne
 
 ---
+
+
+
+
+
+#### Rozwiązanie
+
+$$r = \frac{b_{sr}}{a_{sr} * v}$$
+
+$$\tau_{sr} = \frac{b_{sr}}{v}$$
+
+$$r = \frac{\tau_{sr}}{a_{sr}}$$
+
+$$L = \frac{ 1 - r }{1 - r^{Q+1}} * r^Q$$
   
